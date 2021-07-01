@@ -1,0 +1,98 @@
+Total dataset, 100000
+
+##trees.info()
+Data columns (total 42 columns):
+ #   Column      Non-Null Count   Dtype  
+---  ------      --------------   -----  
+ 0   created_at  100000 non-null  object 
+ 1   tree_id     100000 non-null  int64  
+ 2   block_id    100000 non-null  int64  
+ 3   the_geom    100000 non-null  object 
+ 4   tree_dbh    100000 non-null  int64  
+ 5   stump_diam  100000 non-null  int64  
+ 6   curb_loc    100000 non-null  object 
+ 7   status      100000 non-null  object 
+ 8   health      95007 non-null   object 
+ 9   spc_latin   95008 non-null   object 
+ 10  spc_common  95008 non-null   object 
+ 11  steward     95008 non-null   object 
+ 12  guards      95008 non-null   object 
+ 13  sidewalk    95008 non-null   object 
+ 14  user_type   100000 non-null  object 
+ 15  problems    95008 non-null   object 
+ 16  root_stone  100000 non-null  object 
+ 17  root_grate  100000 non-null  object 
+ 18  root_other  100000 non-null  object 
+ 19  trnk_wire   100000 non-null  object 
+ 20  trnk_light  100000 non-null  object 
+ 21  trnk_other  100000 non-null  object 
+ 22  brnch_ligh  100000 non-null  object 
+ 23  brnch_shoe  100000 non-null  object 
+ 24  brnch_othe  100000 non-null  object 
+ 25  address     100000 non-null  object 
+ 26  zipcode     100000 non-null  int64  
+ 27  zip_city    100000 non-null  object 
+ 28  cb_num      100000 non-null  int64  
+ 29  borocode    100000 non-null  int64  
+ 30  boroname    100000 non-null  object 
+ 31  cncldist    100000 non-null  int64  
+ 32  st_assem    100000 non-null  int64  
+ 33  st_senate   100000 non-null  int64  
+ 34  nta         100000 non-null  object 
+ 35  nta_name    100000 non-null  object 
+ 36  boro_ct     100000 non-null  int64  
+ 37  state       100000 non-null  object 
+ 38  latitude    100000 non-null  float64
+ 39  longitude   100000 non-null  float64
+ 40  x_sp        100000 non-null  float64
+ 41  y_sp        100000 non-null  float64
+dtypes: float64(4), int64(11), object(27)
+
+Dataset of 10,000:
+RangeIndex: 10000 entries, 0 to 9999
+Data columns (total 42 columns):
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   created_at  10000 non-null  object 
+ 1   tree_id     10000 non-null  int64  
+ 2   block_id    10000 non-null  int64  
+ 3   the_geom    10000 non-null  object 
+ 4   tree_dbh    10000 non-null  int64  
+ 5   stump_diam  10000 non-null  int64  
+ 6   curb_loc    10000 non-null  object 
+ 7   status      10000 non-null  object 
+ 8   health      9415 non-null   object 
+ 9   spc_latin   9415 non-null   object 
+ 10  spc_common  9415 non-null   object 
+ 11  steward     9415 non-null   object 
+ 12  guards      9415 non-null   object 
+ 13  sidewalk    9415 non-null   object 
+ 14  user_type   10000 non-null  object 
+ 15  problems    9415 non-null   object 
+ 16  root_stone  10000 non-null  object 
+ 17  root_grate  10000 non-null  object 
+ 18  root_other  10000 non-null  object 
+ 19  trnk_wire   10000 non-null  object 
+ 20  trnk_light  10000 non-null  object 
+ 21  trnk_other  10000 non-null  object 
+ 22  brnch_ligh  10000 non-null  object 
+ 23  brnch_shoe  10000 non-null  object 
+ 24  brnch_othe  10000 non-null  object 
+ 25  address     10000 non-null  object 
+ 26  zipcode     10000 non-null  int64  
+ 27  zip_city    10000 non-null  object 
+ 28  cb_num      10000 non-null  int64  
+ 29  borocode    10000 non-null  int64  
+ 30  boroname    10000 non-null  object 
+ 31  cncldist    10000 non-null  int64  
+ 32  st_assem    10000 non-null  int64  
+ 33  st_senate   10000 non-null  int64  
+ 34  nta         10000 non-null  object 
+ 35  nta_name    10000 non-null  object 
+ 36  boro_ct     10000 non-null  int64  
+ 37  state       10000 non-null  object 
+ 38  latitude    10000 non-null  float64
+ 39  longitude   10000 non-null  float64
+ 40  x_sp        10000 non-null  float64
+ 41  y_sp        10000 non-null  float64
+dtypes: float64(4), int64(11), object(27)
