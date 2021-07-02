@@ -30,19 +30,18 @@ I take a quick look to the dataset to now the size and some basic characteristic
 
 ![info](dataset_info.png)
 
-A description about each column is provided in the document StreetTreeCensus2015TreesDataDictionary20161102.pdf so the first step is to read the document in order
+A description about each column is provided in the document *StreetTreeCensus2015TreesDataDictionary20161102.pdf* so the first step is to read the document in order
 to decide which columns can be dropped and the type of data or content we should find on each column.
 
 Considering this, after the first reading, I decided to drop ([column index in the dataset] column name):
-
 - [1] tree_id 
 According to the document "It specifically identifies data entered by a specific user on a specific survey, not the tree itself"
 
 -[3] the_geom
-It seems just a combination of latitude and longitude in one column
+It seems just a combination of latitude and longitude in one column.
 
 -[11] steward
-"Indicates the number of unique signs of stewardship observed for this tree. Not recorded for stumps or dead trees." This column doesn't seem relevant to me
+"Indicates the number of unique signs of stewardship observed for this tree. Not recorded for stumps or dead trees." This column doesn't seem relevant to me.
 
 - [15] problems
 This is like the sum of columns 16, 17, 18, putting all the problems a tree might have together. Thus redundant information.
@@ -71,7 +70,10 @@ Other steps to do:
 After further study, I'll keep the columns related with the location. Normally with latitude and longitude I can derive all the other ones. The survey is about the trees so we must keep all the columns with relevant info abour the trees and their health...always avoiding duplicates or redundant information. The index of columns to be kept:
 - 0, 4, 5, 6, 7, 8, 9, 10, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 29, 34, 38 and 39; Thus from 42 columns we keep only 22.
 
-After that decision, the cleaning steps are:
+After that decision, enumerated bellow are the steps to follow to clean the dataset.
+
+###Cleaning steps: 
+
 - Drop the unwanted colums (20).
 - Check for duplicates.
 - Change date column from object to date.
@@ -80,4 +82,3 @@ After that decision, the cleaning steps are:
 - Replace empty spaces par nan, for numerical columns, and None for object ones.
 - Check for remaining issues.
 - Print the final cleaned dataset to a csv file.
--
