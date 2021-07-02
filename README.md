@@ -61,4 +61,7 @@ The entire columns has the same value 'New York' so it can be deleted, and in th
 For the rest, more tests are needed.
 
 Other steps to do:
+
+-For sure I will keep latitude and longitude. And every time I have a reference to a place with a name and a code (in different columns), I will keep only the column with the code. It is easier to make mistakes written a name than typing a number.
+
 -decapitalize all the text
