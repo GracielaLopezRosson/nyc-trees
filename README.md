@@ -34,29 +34,29 @@ A description about each column is provided in the document *StreetTreeCensus201
 to decide which columns can be dropped and the type of data or content we should find on each column.
 
 Considering this, after the first reading, I decided to drop ([column index in the dataset] column name):
-- [1] tree_id 
+* [1] tree_id 
 According to the document "It specifically identifies data entered by a specific user on a specific survey, not the tree itself"
 
--[3] the_geom
+* [3] the_geom
 It seems just a combination of latitude and longitude in one column.
 
--[11] steward
+* [11] steward
 "Indicates the number of unique signs of stewardship observed for this tree. Not recorded for stumps or dead trees." This column doesn't seem relevant to me.
 
-- [15] problems
+* [15] problems
 This is like the sum of columns 16, 17, 18, putting all the problems a tree might have together. Thus redundant information.
 
--[30] boroname
+* [30] boroname
 "Name of borough in which tree point is located" column 29 has the code for the borough so I keep only 29.
 
--[31] cncldist
+* [31] cncldist
 
--[32] st_assem
+* [32] st_assem
 
--[33] st_senate
+* [33] st_senate
 These three columns have information the district and other details that can be obtained using for instance columns 29.
 
--[37] state
+* [37] state
 The entire columns has the same value 'New York' so it can be deleted, and in the dataset specification I will add that is data only from New York.
 
 For the rest, more tests are needed.
@@ -65,14 +65,14 @@ Other steps to do:
 
 -For sure I will keep latitude and longitude. And every time I have a reference to a place with a name and a code (in different columns), I will keep only the column with the code. It is easier to make mistakes written a name than typing a number.
 
--decapitalize all the text
+-Decapitalize all the text
 
 After further study, I'll keep the columns related with the location. Normally with latitude and longitude I can derive all the other ones. The survey is about the trees so we must keep all the columns with relevant info abour the trees and their health...always avoiding duplicates or redundant information. The index of columns to be kept:
 - 0, 4, 5, 6, 7, 8, 9, 10, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 29, 34, 38 and 39; Thus from 42 columns we keep only 22.
 
 After that decision, enumerated bellow are the steps to follow to clean the dataset.
 
-###Cleaning steps: 
+#####Cleaning steps: 
 
 - Drop the unwanted colums (20).
 - Check for duplicates.
