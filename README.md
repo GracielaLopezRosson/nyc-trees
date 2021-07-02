@@ -3,7 +3,7 @@
 ## Description :
 The task of this assignement is to clean the dataset "2015 Street Tree Census: Tree Data"
 (source: https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh). By cleaning they mean:
-- The dataset contains no missing values ("" or null)
+- The dataset contains no missing values (" " or null)
 - No duplicates.
 - Values are consolidated
 - Data format is correct
@@ -51,7 +51,9 @@ This is like the sum of columns 16, 17, 18, putting all the problems a tree migh
 "Name of borough in which tree point is located" column 29 has the code for the borough so I keep only 29.
 
 -[31] cncldist
+
 -[32] st_assem
+
 -[33] st_senate
 These three columns have information the district and other details that can be obtained using for instance columns 29.
 
@@ -65,3 +67,17 @@ Other steps to do:
 -For sure I will keep latitude and longitude. And every time I have a reference to a place with a name and a code (in different columns), I will keep only the column with the code. It is easier to make mistakes written a name than typing a number.
 
 -decapitalize all the text
+
+After further study, I'll keep the columns related with the location. Normally with latitude and longitude I can derive all the other ones. The survey is about the trees so we must keep all the columns with relevant info abour the trees and their health...always avoiding duplicates or redundant information. The index of columns to be kept:
+- 0, 4, 5, 6, 7, 8, 9, 10, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 29, 34, 38 and 39; Thus from 42 columns we keep only 22.
+
+After that decision, the cleaning steps are:
+- Drop the unwanted colums (20).
+- Check for duplicates.
+- Change date column from object to date.
+- Decapitalize all the strings
+- Change 'yes' and 'no' from multiple columns to boolean True/False.
+- Replace empty spaces par nan, for numerical columns, and None for object ones.
+- Check for remaining issues.
+- Print the final cleaned dataset to a csv file.
+-
