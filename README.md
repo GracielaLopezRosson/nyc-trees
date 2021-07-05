@@ -84,7 +84,7 @@ After that decision, enumerated bellow are the steps to follow to clean the data
 - Print the final cleaned dataset to a csv file.
 
 
-###### Final remark:
+## Final remark:
 
 At the end, I still have ~5% null values in three columns: 'health', 'spc_latin', 'spc_common'. 
 Because we don't know the final use of the dataset, I consider 5% of data as not negligable so I decided to keep it.
