@@ -13,7 +13,7 @@ The task of this assignement is to clean the dataset "2015 Street Tree Census: T
 Just run nyc-trees.py
 
 ## Usage 
-To clean the dataset "2015 Street Tree Census: Tree Data" (input dataset:  data_100000.csv size (42x100000), output: data_trees_100000_clean.csv size ())
+To clean the dataset "2015 Street Tree Census: Tree Data" (input dataset:  data_100000.csv size (100000x42), output: data_trees_100000_clean.csv size (100000x22))
 
 ##(Visuals)
 
@@ -82,3 +82,9 @@ After that decision, enumerated bellow are the steps to follow to clean the data
 - Replace empty spaces par nan, for numerical columns, and None for object ones.
 - Check for remaining issues.
 - Print the final cleaned dataset to a csv file.
+
+
+#####Final remark:
+
+At the end, I still have ~5% null values in three columns: 'health', 'spc_latin', 'spc_common'. 
+Because we don't know the final use of the dataset, I consider 5% of data as not negligable so I decided to keep it.
