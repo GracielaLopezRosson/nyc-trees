@@ -1,4 +1,4 @@
-# data cleaning project - NYC Trees
+# Data cleaning project - NYC Trees
 
 ## Description :
 The task of this assignement is to clean the dataset "2015 Street Tree Census: Tree Data"
